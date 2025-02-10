@@ -12,6 +12,13 @@ Cypress.Commands.add('cadastrar', (nome,email, password, password2) => {
     cy.get('[data-test="submit-button"]').click();   
         })
 
+Cypress.Commands.add('dadosp', (telefone,cidade) => {       
+    cy.get('#telefone').type(telefone);
+    cy.get('#cidade').type(cidade);
+    cy.get('[data-test="submit-button"]').click();   
+        })
+
+
 
 // ***********************************************
 // This example commands.js shows you how to
